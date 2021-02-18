@@ -1,0 +1,23 @@
+{
+  "name": "db-react-cli",
+  "version": "1.2.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "commander": "^7.1.0",
+    "download-git-repo": "^3.0.2",
+    "inquirer": "^7.3.3",
+    "ora": "^5.3.0",
+    "rimraf": "^3.0.2"
+  },
+  "bin": {
+    "db-react-cli": "bin/index.js"
+  }
+}
