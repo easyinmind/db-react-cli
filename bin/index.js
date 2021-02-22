@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-const fs = require("fs");
+const { execSync, exec } = require("child_process");
 const path = require("path");
 //命令行输出样式美化
 const chalk = require("chalk");
@@ -43,12 +43,12 @@ program
         }
 
         return true;
-      }
+      },
     });
-
+    
     list = list.concat(promptList);
     inquirer.prompt(list).then((answers) => {
-      console.log(answers);
+      console.log("您的选择", answers);
       download("easyinmind/project-learn#master", name);
     });
   });
